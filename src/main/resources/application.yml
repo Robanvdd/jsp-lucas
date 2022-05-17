@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  database: hsqldb
+  mvc:
+    view:
+      prefix: /view/
+      suffix: .jsp
+  profiles:
+    active: dev
+  main:
+    banner-mode: off
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    open-in-view: false
+    generate-ddl: false
