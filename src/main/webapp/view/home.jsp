@@ -6,16 +6,16 @@
 </head>
 <body>
 
-<% if(request.getParameter("username") != null) { %>    
+<% if(request.getParameter("name") != null) { %>    
 
-<h3>Welcome <%=request.getParameter("username") %></h3>
-<img src="bunny.png"/>
+<h3>Welcome <%=request.getParameter("name") %></h3>
+<img src="bunny.gif"/>
 
 <% } else { %>
 
 <form action="home" method="get">
 
-Enter username: <input type="text" name="username" />
+Enter name: <input type="text" name="name" />
 
 <% } %>    
 
